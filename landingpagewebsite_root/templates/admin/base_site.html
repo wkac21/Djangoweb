@@ -1,0 +1,38 @@
+{% extends "admin/base.html" %}
+{% load static %}
+<link href="{% static 'external.css' %}" rel="stylesheet">
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+{% block extrastyle %}
+<style>
+body{
+  background: #b2b2b2;
+}
+h1{
+  color: #1eff26;
+}
+
+#header{
+ background: #0b3144;
+}
+
+#branding{
+ width: 90px;
+}
+
+#site-name{
+     float: rigth;
+}
+
+</style>
+{% endblock %}
+{% block branding %}
+
+
+<a class="logo-top" href="#">
+	    <img src="{% static 'img/logo1.png' %}" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+	    DasMotors Group
+</a>
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

@@ -24,9 +24,9 @@
 .instagram-number {
   width: 35px;
   height: 35px;
-  float: right;
+  float: center;
   margin: 15px 30px 5px 20px;
-  background: url(./img/Instagram_logo.png) no-repeat center top / cover;
+  background: url(./img/Instagram-logo.png) no-repeat center top / cover;
   transition: 0.5s ease-in-out;
 }
 .telegram-number {
